@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+
+\title{Impact Velocity Calculation}
+\author{Aditya Kamat}
+%\date{}
+
+\begin{document}
+\maketitle
+
+This document derives the equation for calculating the impact velocity when the vehicle under test (VUT) collides with global vehicle target (GVT) for given initial speed, time for collision (TTC) and a brake model describing the deceleration profile.
+
+\section{Brake Model}
+
+The following figure shows the deceleration profile when the brakes are activated. It contains 3 phases: 
+
+\begin{itemize}
+  \item \textbf{Dead Time:} In this phase, the brakes are still inactive as a result the deceleration is 0.
+  \item \textbf{Ramp Time:} In this phase, the deceleration applied increases linearly to the maximum deceleration allowed.
+  \item \textbf{Constant deceleration phase}: In this phase, the VUT undergoes constatnt deceleration
+  
+\end{itemize}
+
+\section{Derivations}
+Given, 
+\begin{itemize}
+  \item u = Initial velocity in m/s
+  \item TTC = Time to collide
+\end{itemize}
+
+\noindent Variable Definitions:
+\begin{itemize}
+  \item $s_{total} = \text{Distance between VUT and GVT} = {u \times TTC }$
+  \item $s_{dead} = \text{Distance covered in dead time}$
+  \item $s_{ramp} = \text{Distance covered in ramp time}$
+  \item $v_{ramp} = \text{Velocity at the end of ramp phase}$
+\end{itemize}
+ 
+\noindent From the deceleration profile, we have,
+
+\begin{equation} \label{eq:deceleration_profile}
+a = \begin{cases} 0 &\mbox{if } t \le t_{dead} \\
+\frac{-Decel_{max}}{t_{ramp}} \times t & \mbox{if } t_{dead} \le t \le (t_{dead} + t_{ramp}) \\
+-Decel_{max} & \mbox{if } t \ge (t_{dead} + t_{ramp}) 
+\end{cases}
+\end{equation}
+
+\subsection{Dead Time}
+In this phase, the deceleration is 0. Hence, the final velocity in this phase is equal to initial velocity (u). The distance covered ($s_{dead}$) in this phase is,
+
+\[ s_{dead} = u \times t_{dead} \]
+
+\subsection{Ramp Time}
+In this phase, initial velocity is 'u' m/s. The deceleration is linear as defined by equation~\ref{eq:deceleration_profile}
+
+\begin{equation} 
+\begin{split}
+\frac{dv}{dt} & = a \\
+dv & = a \cdot dt \\
+\int_{u}^{v_{ramp}}{dv} &= \int_{t_{dead}}^{t_{ramp}+t_{dead}}{a \cdot dt} \\
+v_{ramp} - u &= \int_{t_{dead}}^{t_{ramp}+t_{dead}}{\frac{-Decel_{max}}{t_{ramp}} \times t \cdot dt} \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+v_{ramp} - u &= \frac{-Decel_{max}}{t_{ramp}} \times \frac{t^2}{2}\lvert_{t_{dead}}^{t_{ramp}+t_{dead}} \\
+v_{ramp} &= u - \frac{Decel_{max}}{2t_{ramp}} \times [(t_{ramp}+t_{dead})^2 - t_{dead}^2] \\
+\end{split}
+\end{equation}
+
+\noindent At any time t in the ramp phase, the velocity at time t is given by,
+
+\[ v(t) = u - \frac{Decel_{max}}{2 \times t_{ramp}} \times [t^2 - t_{dead}^2] \]
+
+\noindent To calculate distance covered in ramp phase,
+
+\begin{equation} 
+\begin{split}
+\frac{ds}{dt} & = v \\
+dv & = a \cdot dt \\
+\int_{s_{dead}}^{s_{ramp}}{ds} &= \int_{t_{dead}}^{t_{ramp}+t_{dead}}{v \cdot dt} \\
+s_{ramp} - s_{dead} &= \int_{t_{dead}}^{t_{ramp}+t_{dead}}{ u - \frac{Decel_{max}}{2 \times t_{ramp}} \times [t^2 - t_{dead}^2] \cdot dt} \\
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+s_{ramp} - s_{dead} &= u (t_{ramp}) - \frac{-Decel_{max}}{2 \times t_{ramp}} \times \int_{t_{dead}}^{t_{ramp}+t_{dead}}{t^2 dt} + ... \\
+v_{ramp} &= u - \frac{Decel_{max}}{2t_{ramp}} \times [(t_{ramp}+t_{dead})^2 - t_{dead}^2] \\
+\end{split}
+\end{equation}
+
+\end{document}
+
