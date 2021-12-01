@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+  <MSRSW CREATOR="HEAD Autocoder" CREATOR-VERSION="V2.1.0">
+    
+    <CATEGORY>CDF21</CATEGORY>
+    <SW-SYSTEMS>
+      
+      <SW-SYSTEM>
+        
+        <SW-INSTANCE-SPEC>
+          
+          <SW-INSTANCE-TREE>
+            
+            <CATEGORY>NO_VCD</CATEGORY>
+            <SW-INSTANCE-TREE-ORIGIN>
+              
+              <SYMBOLIC-FILE>HEAD_Param_list.a2l</SYMBOLIC-FILE>
+            </SW-INSTANCE-TREE-ORIGIN>
+            <SW-INSTANCE>
+              
+              <SHORT-NAME>PreCG0_Cond5</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SW-INSTANCE>
+                
+                <SHORT-NAME>ParameterType</SHORT-NAME>
+                <CATEGORY>STRUCTURE</CATEGORY>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterMainType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <VT xml:space="preserve">scalar value</VT>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterMainValueType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <VT xml:space="preserve">value</VT>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterOperator</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <VT xml:space="preserve">&gt;=</VT>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterOutType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <VT xml:space="preserve">TTC (time to collision), ETTC</VT>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterMode</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>0</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterHypObjectClass</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>2</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterDynamicProperty</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>3</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterHypSubType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>3</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterSensorSubType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>0</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+                <SW-INSTANCE>
+                  
+                  <SHORT-NAME>ParameterObjectMovementDirection</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-VALUE-CONT>
+                    
+                    <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                    <SW-VALUES-PHYS>
+                      
+                      <V>7</V>
+                    </SW-VALUES-PHYS>
+                  </SW-VALUE-CONT>
+                </SW-INSTANCE>
+              </SW-INSTANCE>
+              <SW-INSTANCE>
+                
+                <SHORT-NAME>NextParamPointer</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <SW-VALUE-CONT>
+                  
+                  <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                  <SW-VALUES-PHYS>
+                    
+                    <V>0</V>
+                  </SW-VALUES-PHYS>
+                </SW-VALUE-CONT>
+              </SW-INSTANCE>
+              <SW-INSTANCE>
+                
+                <SHORT-NAME>NextRelevantParamPointer</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <SW-VALUE-CONT>
+                  
+                  <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                  <SW-VALUES-PHYS>
+                    
+                    <V>0</V>
+                  </SW-VALUES-PHYS>
+                </SW-VALUE-CONT>
+              </SW-INSTANCE>
+              <SW-INSTANCE>
+                
+                <SHORT-NAME>SpecialParInfo</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <SW-VALUE-CONT>
+                  
+                  <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                  <SW-VALUES-PHYS>
+                    
+                    <V>0</V>
+                  </SW-VALUES-PHYS>
+                </SW-VALUE-CONT>
+              </SW-INSTANCE>
+              <SW-INSTANCE>
+                
+                <SHORT-NAME>f16RawValue</SHORT-NAME>
+                <CATEGORY>VALUE</CATEGORY>
+                <SW-VALUE-CONT>
+                  
+                  <UNIT-DISPLAY-NAME xml:space="preserve"></UNIT-DISPLAY-NAME>
+                  <SW-VALUES-PHYS>
+                    
+                    <V>17408</V>
+                  </SW-VALUES-PHYS>
+                </SW-VALUE-CONT>
+              </SW-INSTANCE>
+            </SW-INSTANCE>
+          </SW-INSTANCE-TREE>
+        </SW-INSTANCE-SPEC>
+      </SW-SYSTEM>
+    </SW-SYSTEMS>
+  </MSRSW>

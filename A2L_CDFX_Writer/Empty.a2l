@@ -1,0 +1,21 @@
+/*** Adam Version 8.5.1, 25.03.2009 ***/
+/*** Created by using ADAM-CC Toolset ***/
+
+ASAP2_VERSION 1 6
+
+ /begin PROJECT ExampleProject "Exampl ECU project
+ dgafsgjkh"
+
+  /begin HEADER "ECU XXX"
+    PROJECT_NO ProjectNumberValue
+    VERSION "some version"
+  /end HEADER
+
+  /begin MODULE Module1 "Description Module 1
+  
+  on 
+  
+  multiple lines"
+
+  /end MODULE
+/end PROJECT

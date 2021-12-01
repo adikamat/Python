@@ -1,0 +1,52 @@
+/*
+   Written by ASAP2Library v7.0.41
+   3/27/2020 5:31 PM 
+   Original file: Empty.a2l
+*/
+
+ASAP2_VERSION 1 6
+
+/begin PROJECT ExampleProject	"Exampl ECU project
+ dgafsgjkh"
+
+	/begin HEADER
+		"ECU XXX"
+		VERSION "some version"
+		PROJECT_NO ProjectNumberValue
+	/end HEADER
+
+	/begin MODULE Module1
+		"Description Module 1
+  
+  on 
+  
+  multiple lines"
+
+		/begin COMPU_METHOD NewCompuMethod
+			"Some Long Description. Blah Blah"
+			IDENTICAL
+			"%4.2" "m/s^2"
+		/end COMPU_METHOD
+
+		/begin COMPU_VTAB NewCompuVTab
+			"Some Long Description. Blah Blah"
+			TAB_VERB
+			1
+			1 "Meh!"
+		/end COMPU_VTAB
+
+		/begin RECORD_LAYOUT MyNewRecLay
+		/end RECORD_LAYOUT
+
+		/begin CHARACTERISTIC Adi
+			"Some long description"
+			VALUE
+			0x119AE30
+			MyNewRecLay
+			0
+			NO_COMPU_METHOD
+			0 65535
+			EXTENDED_LIMITS 0 0
+		/end CHARACTERISTIC
+	/end MODULE
+/end PROJECT
